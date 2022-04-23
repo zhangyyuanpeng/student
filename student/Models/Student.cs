@@ -9,7 +9,7 @@ namespace student.Models
         public string Name { get; set; }
         [StringLength(1)]
         public string Sex { get; set; }
-        [Range(1, 100, ErrorMessage = "年龄应在0-100之间")]
+        [Range(1, 200, ErrorMessage = "年龄应在0-200之间")]
         public int Age { get; set; }
         [DataType(DataType.Date)]
         public DateTime Birthday { get; set; }
